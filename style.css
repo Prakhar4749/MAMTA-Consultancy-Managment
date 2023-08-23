@@ -159,12 +159,12 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 
 
 
-footer .end p {
-    font-size: 12px;
+.footer .end p {
+    font-size: 14px;
     letter-spacing: 0.5px;
 }
 
-footer .end {
+.footer .end {
     padding: 20px 0;
 }
 
