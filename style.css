@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+/* utilities */
+
+.flex{
+    display: flex;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1300px;
+    margin:0 auto;
+    overflow: auto;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;  
+    justify-content: center;
+    gap: 50px;
+}
+img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
+    cursor: pointer;
+}
+.btn-primary {
+    background-color:  #80DEA9;
+    color: black;
+    border: 1px solid  #80DEA9;
+}
+
+/* navbar  */
+
+.menu{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 800px) {
+    .above-800{
+        display: none;
+    }
+}
+@media(min-width: 800px) {
+    .below-800{
+        display: none;
+    }
+}
+
+/* landing page */
+
+.main{
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(./images/main.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: brightness(60%); */
+    color: white;
+    height: 600px;
+    padding: 50px;
+}
+.main-text{
+    height: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+
+}
+.main-text h6{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 7px;
+}
+.main-text h2{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-size: 50px
+}
+.main-text h5{
+    font-family:Montserrat, sans-serif;
+    letter-spacing: 1px;
+    text-align: start;
+    max-width: 450px;
+    margin: auto;
+    font-size: 16px;
+}
+.explore{
+    font-family:Montserrat, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+.explore:hover{
+    background-color: rgb(58, 58, 58)
+}
+
+/* services  */
+
+.cards{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    min-width: 320px;
+}
+.card .btn{
+    background-color: #80DEA9;
+}
+
+
+/* work and experience  */
+
+.work{
+    background-color:rgb(224,234,241);
+}
+.work h5{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    font-weight: 200;
+}
+.experience .text{
+    width: 50%;
+}
+.experience .btn{
+    max-width: 200px;
+    background-color: #80DEA9;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.wrap-r{
+    flex-wrap: wrap-reverse;
+}
+/* footer  */
+
+
+
+
+footer .end p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+footer .end {
+    padding: 20px 0;
+}
+
+.footer {
+    background-color:rgb(224,234,241);
+}
+footer h4 {
+    height: 40px;
+}
+
+/* CONTact as  */
+
+ 
+.footer .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.footer .btn-primary {
+    background-color:  #80DEA9;
+    color: black;
+    border: 1px solid  #80DEA9;
+}
+ 
+.footer .btn:hover {
+    background-color:  white;
+}
+ 
+#service {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+ 
+ 
+.h-primary {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+}
+ 
+.contact-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+ 
+.contact-card img {
+    max-width: 80px;
+}
+ 
+.contact-card h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+ 
+.card-text {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #555;
+}
+ 
+.phone-number {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+ 
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Example</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="#"><img src="./images/logo-nav.png" alt="" width="150px"></a>
+            <ul class="nav above-800">
+                <li class="nav-item">
+                    <a class="menu" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu" aria-current="page" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu" aria-current="page" href="#work">Previous Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu" aria-current="page" href="#contact">Contact Us</a>
+                </li>
+
+            </ul>
+            <button class="navbar-toggler below-800" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./logo-nav.png" alt=""
+                            width="150px"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="menu" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu" aria-current="page" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu" aria-current="page" href="#work">Previous Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="menu" aria-current="page" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main" id="home">
+            <div class="main-text flex-c">
+
+                <div>
+                    <h1>MAMTA</h1>
+                    <h6>Consultancy and Managment</h6>
+                </div>
+                <div>
+                    <h2>We don't manage events, <br> we manage the bonds.</h2>
+                </div>
+                <div>
+                    <h5>We are known for providing top-notch services in various domains. Mamta Consultancy and
+                        Management is a powerhouse of talent, innovation, and dedication.</h5>
+                </div>
+                <button type="button" class="btn explore" width="100px">Explore More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class=" container flex-c py-5 my-5">
+
+            <div class="main-text">
+                <h1>Our Services</h1>
+            </div>
+            <div class=" cards my-5 flex">
+
+                <div class="card flex-c m-5" style="width: 18rem;">
+                    <img src="./images/service-card-1.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Human Resource Solutions</h5>
+                        <p class="card-text my-4">We connect businesses with the right talent by offering tailored HR
+                            solutions that drive growth.</p>
+                        <a href="#" class="btn my-1">Know More</a>
+                    </div>
+                </div>
+                <div class="card flex-c m-5" style="width: 18rem;">
+                    <img src="./images/service-card-2.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">
+                            Event Management</h5>
+                        <p class="card-text my-4">Our event management team designs and executes memorable events that
+                            leave a lasting impression.
+                        </p>
+                        <a href="#" class="btn my-1">Know More</a>
+                    </div>
+                </div>
+                <div class="card flex-c m-5" style="width: 18rem;">
+                    <img src="./images/service-card-3.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Graphic Designing</h5>
+                        <p class="card-text my-4">We craft visually stunning designs that captivate audiences and convey
+                            impactful messages.
+                        </p>
+                        <a href="#" class="btn my-1">Know More</a>
+                    </div>
+                </div>
+                <div class="card flex-c m-5" style="width: 18rem;">
+                    <img src="./images/service-card-4.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Photography</h5>
+                        <p class="card-text my-4">Our photography services capture special moments, telling stories
+                            through the lens.
+                        </p>
+                        <a href="#" class="btn my-1">Know More</a>
+                    </div>
+                </div>
+                <div class="card flex-c m-5" style="width: 18rem;">
+                    <img src="./images/service-card-5.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Compere Services</h5>
+                        <p class="card-text my-4">We ensure events flow smoothly with engaging compering, creating a
+                            vibrant atmosphere.
+                        </p>
+                        <a href="#" class="btn my-1">Know More</a>
+                    </div>
+                </div>
+                <div class="card flex-c m-5" style="width: 18rem;">
+                    <img src="./images/service-card-6.jpg" class="card-img-top" alt="..." height="180px">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Event Planning</h5>
+                        <p class="card-text my-4">Our meticulous planning ensures flawless execution, making every event
+                            a resounding success.
+                        </p>
+                        <a href="#" class="btn my-1">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class=" container flex-c py-1 my-5">
+
+            <div class="main-text">
+                <h1>Our Work and Experience</h1>
+            </div>
+            <img src="./images/logo.png" alt="" width="300px" class="mx-auto">
+            <h5 class="px-5 mx-5 text-center">With a diverse team that includes skilled project managers, graphic
+                designers, charismatic comperes, and talented photographers, we have a proven track record of
+                orchestrating exceptional events and fostering meaningful connections.
+            </h5>
+        </div>
+    </section>
+    <section class="experience container flex-c my-5">
+        <!-- <div class="flex justify-content-between my-5 py-5 wrap">
+            <div class="flex-c text">
+                <h1>Versatile Expertise Across Fields</h1>
+                <p  class="my-5">Our company's expertise extends across versatile fields, reflecting our adaptability and creativity. We've successfully undertaken projects in areas ranging from literary festivals to government college events, private parties, seminars, commercial meetings, and more. This wide-ranging experience showcases our ability to excel in diverse environments.
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+            <img src="./images/main.jpg" alt="" width="450px">
+        </div> -->
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <img src="./images/work-1.jpg" alt="" width="450px">
+            <div class="flex-c text">
+                <h1>Bhopal Literature Fest Triumph </h1>
+                <p class="my-5">A standout achievement in our portfolio is the successful execution of the Bhopal
+                    Literature Fest, a nationally recognized event. Our involvement spanned from providing skilled human
+                    resources to coordinating technicians and managing comperes. We orchestrated the prestigious award
+                    ceremony and book launching event with finesse, graced by prominent personalities from diverse
+                    domains. This event marked a pivotal milestone in our journey.
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <div class="flex-c text">
+                <h1>Government College Orientation Excellence </h1>
+                <p class="my-5">Mamta Consultancy and Management takes pride in orchestrating the orientation program
+                    for government colleges. From comperes to technicians, photographers to event managers, our
+                    versatile team ensures every detail is meticulously managed. Our involvement extended to designing
+                    the Induction Magazine, a testament to our comprehensive approach. With 9 days dedicated to the
+                    event, we hosted officers from various sectors, creating a holistic experience for 400 to 600
+                    students.
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+            <img src="./images/work-2.jpg" alt="" width="450px">
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <img src="./images/work-3.jpg" alt="" width="450px">
+            <div class="flex-c text">
+                <h1>Seminars and Strategic Meetings</h1>
+                <p class="my-5">Our prowess shines in organizing impactful seminars and commercial meetings, such as the
+                    National Educational Policy Seminar. These gatherings facilitate knowledge exchange and strategic
+                    discourse, marking our imprint on educational advancement.
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <div class="flex-c text">
+                <h1>Technological Empowerment</h1>
+                <p class="my-5">The inauguration of TALL (Technology Assisted Language Lab) stands as a testament to our
+                    commitment to progress. This innovative lab empowers students with language proficiency, and our
+                    team provided the necessary human resources, technicians, comperes, and designers to launch this
+                    transformative endeavor.
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+            <img src="./images/work-4.jpg" alt="" width="450px">
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <img src="./images/work-5.jpg" alt="" width="450px">
+            <div class="flex-c text">
+                <h1>Vibrant Private Parties </h1>
+                <p class="my-5">Our expertise extends beyond the corporate realm, as we've curated lively private
+                    parties like birthdays, freshers' welcomes, farewells, and Holi celebrations. Each event radiated
+                    joy and festivity, illustrating our commitment to infusing every occasion with a sense of delight
+                    and camaraderie.
+
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <div class="flex-c text">
+                <h1>Construction Company Support</h1>
+                <p class="my-5">Beyond event management, Mamta Consultancy and Management has also contributed design
+                    and marketing services to a construction company. Our creative prowess and strategic marketing
+                    insights have enhanced their brand presence, reflecting our ability to cater to a diverse range of
+                    business needs.
+
+
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+            <img src="./images/work-6.jpg" alt="" width="450px">
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <img src="./images/work-7.jpg" alt="" width="450px">
+            <div class="flex-c text">
+                <h1>Quality Council of India Collaboration</h1>
+                <p class="my-5">One of our significant accomplishments was partnering with the Quality Council of India
+                    for crucial ODF (Open Defecation Free) and GFC (Garbage Free Category) surveys. Our exceptional
+                    human resources and technical expertise played a pivotal role in supporting their operations. Our
+                    collaboration exemplifies our commitment to contributing meaningfully to initiatives with a broader
+                    societal impact. <br> Through our partnership, we exhibited our ability to deliver excellence in
+                    diverse contexts, reinforcing our position as a reliable and impactful partner. <br>
+
+
+
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <div class="flex-c text">
+                <h1>Crafting Brand Identity</h1>
+                <p class="my-5">Our creative prowess extends to the corporate sector, as we offer design and marketing
+                    services to construction companies. By shaping brand identities, we contribute to their success and
+                    growth.
+
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+            <img src="./images/work-8.jpg" alt="" width="450px">
+        </div>
+        <div class="flex justify-content-between my-5 py-5 wrap">
+            <img src="./images/work-9.jpg" alt="" width="450px">
+            <div class="flex-c text">
+                <h1>Embracing Compassion</h1>
+                <p class="my-5">Heartwarming Visit to Aasra Old Age Home Charity Works :
+                    By incorporating charity work into our activities, we demonstrated the alignment of our values with
+                    concrete actions. Our commitment to compassion, empathy, and community engagement shines through in
+                    our dedication to initiatives that promote well-being and happiness. Our visit to Aasra Old Age Home
+                    epitomizes our belief in the transformative power of human connection and compassion. This
+                    initiative reflects our determination to create positive change, not only in the professional sphere
+                    but also in the lives of those we touch.
+
+
+                </p>
+                <a href="#" class="btn my-1">Know More</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="contact">
+        <section class=" footer-main flex-c container">
+            <h1 class="h-primary text-center" style="margin-top:30px;">
+                Best Ways to Reach Us
+            </h1>
+            <div id="service">
+                <div class="contact-card">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-reading-book-2130818-1794963.png"
+                        alt="form_image">
+                    <h2>Online Form</h2>
+                    <p class="card-text">
+                        Use our user-friendly online form to submit your inquiry.
+                    </p>
+                    <a href="#" class="btn btn-primary">Fill Form</a>
+                </div>
+                <div class="contact-card">
+                    <img src="https://clouddevs.com/3dbay/files/preview/1280x1112/11663147191hdb3bsfnxjvd1lb84afobshwzdsittsvqixbjw72gqklloxogh2ocwopwcn0abcimhkqasth8y8n0f4qp9o2k0aisqdeoiw8y4ys.png" alt="email_image">
+                    <h2>Email</h2>
+                    <p class="card-text">
+                        Send us an email anytime. We usually respond within 24 hours.
+                    </p>
+                    <a href="mailto:contact@example.com" class="btn btn-primary">
+                        Email Us</a>
+                </div>
+                <div class="contact-card">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/12/58/dial-phone-146639_1280.png"
+                        alt="phone_image">
+                    <h2>Toll-Free Number</h2>
+                    <p class="card-text">
+                        Reach our support team via our 24/7 toll-free number.
+                        <!-- <p class="phone-number">Call: +1800 200 300 400</p> -->
+                    </p>
+                    <a href="mailto:contact@example.com" class="btn btn-primary">
+                        Call Us</a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="end">
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
+                    and
+                    Content Policies. All trademarks are properties of their respective owners. 2008-2023 © MAMTA™
+                    Ltd.
+                    All rights reserved.</p>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
