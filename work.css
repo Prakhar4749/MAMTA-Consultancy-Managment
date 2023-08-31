@@ -45,6 +45,7 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
     border: 1px solid  #80DEA9;
 }
 
+
 /* navbar  */
 
 .navbar{
@@ -64,7 +65,7 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 .menu:hover{
     border-bottom: 2px solid #80DEA9;
 }
-.menu:current{
+.menu:focus{
     border-bottom: 2px solid #80DEA9;
 }
 
@@ -82,13 +83,13 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 /* landing page */
 
 .main{
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(./images/main.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./images/work-main.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position-y: center;
     /* filter: brightness(60%); */
     color: white;
-    height: 600px;
-    padding: 50px;
+    height: 450px;
+    /* padding: 50px; */
 }
 .main-text{
     height: 100%;
@@ -96,6 +97,7 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
     justify-content: space-evenly;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
+    padding-top: 100px;
 
 }
 .main-text h6{
@@ -105,7 +107,8 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 .main-text h2{
     font-family:Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
-    font-size: 50px
+    font-size: 5vw;
+    text-transform: uppercase;
 }
 .main-text h5{
     font-family:Montserrat, sans-serif;
@@ -130,10 +133,11 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
     background-color: rgb(58, 58, 58)
 }
 
+
 /* work and experience  */
 
 .work{
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(224,234,241);
 }
 .work h5{
     font-family:Arial, Helvetica, sans-serif ;
@@ -146,16 +150,35 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 .experience .text{
     width: 50%;
 }
-.experience .btn{
+.btn-width{
     max-width: 200px;
     background-color: #80DEA9;
+}
+.btn-width:hover{
+    background-color: #fff;
+    border: 1px solid #80DEA9;
 }
 .wrap{
     flex-wrap: wrap;
 }
-.wrap-r{
-    flex-wrap: wrap-reverse;
+.collapse .card-flex{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5px solid #a2a2a2;
+    border-radius: 6px;
+    justify-content: center;
+    gap: 20px;
+    transition-delay: 0ms;
 }
+.collapse{
+    overflow: auto;
+    scroll-behavior: smooth;
+    max-width: 1200px;
+}
+
+
+
+
 
 /* footer  */
 
@@ -249,4 +272,5 @@ footer h4 {
     transform: translateY(-5px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
+
 
