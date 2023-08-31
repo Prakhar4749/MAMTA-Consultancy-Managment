@@ -150,6 +150,14 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 .card .btn{
     background-color: #80DEA9;
 }
+.btn-width{
+    max-width: 200px;
+    background-color: #80DEA9;
+}
+.btn-width:hover{
+    background-color: #fff;
+    border: 1px solid #80DEA9;
+}
 
 
 
