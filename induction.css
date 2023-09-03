@@ -91,6 +91,7 @@ p {
     width: 100%;
     z-index: 10;
     background-image: linear-gradient(30deg, #a03638, #261116);
+    padding: 1%;
 }
 
 .menu {
@@ -110,6 +111,14 @@ p {
 .menu:focus {
     border-bottom: 2px solid #80DEA9;
 }
+.offcanvas{
+    background-color: #730F15;
+}
+.navbar-toggler{
+    margin-right: 10px;
+    padding: 0 ;
+    overflow: hidden;
+}
 
 @media(max-width: 1100px) {
     .above-800 {
@@ -127,7 +136,7 @@ p {
 
 .induction-text {
     position: relative;
-    margin-top: 58px;
+    margin-top: 32px;
 }
 
 @media(min-width: 1100px) {
@@ -220,6 +229,8 @@ p {
     background-color: #a03638;
     color: white;
     border: 1px solid #a03638;
+    width: 50%;
+    font-size: 1.5vw;
 }
 
 .schedule .btn:hover {
