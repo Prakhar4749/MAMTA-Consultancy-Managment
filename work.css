@@ -1,88 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: auto;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
-body{
-    font-family: 'Lato', sans-serif;
+
+body {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
 
 /* utilities */
 
-.flex{
+.flex {
     display: flex;
 }
-.flex-c{
+
+.flex-c {
     display: flex;
     flex-direction: column;
 }
-.container{
+
+.container {
     max-width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: auto;
     justify-content: center;
     /* border: 2px solid black; */
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-ul{
-    list-style: none;  
+
+ul {
+    list-style: none;
     justify-content: center;
     gap: 50px;
 }
-img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    overflow: hidden;
+}
+
+img,
+.btn,
+.places-card,
+.card,
+.box,
+.navbar li,
+.navbar .left,
+i {
     cursor: pointer;
 }
+
 .btn-primary {
-    background-color:  #80DEA9;
+    background-color: #80DEA9;
     color: black;
-    border: 1px solid  #80DEA9;
+    border: 1px solid #80DEA9;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        max-width: unset;
+    }
 }
 
 
 /* navbar  */
 
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     z-index: 10;
 }
-.menu{
+
+.menu {
     text-decoration: none;
     color: rgb(60, 60, 60);
-    font-family:monospace;
+    /* font-family:monospace; */
     font-size: 19px;
     letter-spacing: 2px;
     cursor: pointer;
     padding: 0 3px;
 }
-.menu:hover{
+
+.menu:hover {
     border-bottom: 2px solid #80DEA9;
 }
-.menu:focus{
+
+.menu:focus {
     border-bottom: 2px solid #80DEA9;
 }
 
 @media(max-width: 1100px) {
-    .above-800{
+    .above-800 {
         display: none;
     }
 }
+
 @media(min-width: 1100px) {
-    .below-800{
+    .below-800 {
         display: none;
     }
 }
 
 /* landing page */
 
-.main{
+.main {
     background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./images/work-main.jpg) no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -91,35 +124,40 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
     height: 450px;
     /* padding: 50px; */
 }
-.main-text{
+
+.main-text {
     height: 100%;
     text-align: center;
     justify-content: space-evenly;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     letter-spacing: 2px;
     padding-top: 100px;
 
 }
-.main-text h6{
-    font-family:Arial, Helvetica, sans-serif;
+
+.main-text h6 {
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 7px;
 }
-.main-text h2{
-    font-family:Arial, Helvetica, sans-serif;
+
+.main-text h2 {
+    /* font-family:Arial, Helvetica, sans-serif; */
     letter-spacing: 3px;
     font-size: 5vw;
     text-transform: uppercase;
 }
-.main-text h5{
-    font-family:Montserrat, sans-serif;
+
+.main-text h5 {
+    font-family: Montserrat, sans-serif;
     letter-spacing: 1px;
     text-align: start;
     max-width: 450px;
     margin: auto;
     font-size: 16px;
 }
-.explore{
-    font-family:Montserrat, sans-serif;
+
+.explore {
+    /* font-family:Montserrat, sans-serif; */
     letter-spacing: 1px;
     text-align: center;
     width: 200px;
@@ -129,39 +167,53 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
     border: 1px solid white;
     margin: 0 auto;
 }
-.explore:hover{
+
+.explore:hover {
     background-color: rgb(58, 58, 58)
 }
 
 
 /* work and experience  */
 
-.work{
-    background-color:rgb(224,234,241);
+.work {
+    background-color: rgb(224, 234, 241);
 }
-.work h5{
-    font-family:Arial, Helvetica, sans-serif ;
+
+.work h5 {
+    /* font-family:Arial, Helvetica, sans-serif ; */
     font-size: 20px;
     font-weight: 200;
 }
-.experience{
+
+.experience {
     align-items: center;
 }
-.experience .text{
+
+.experience .text {
     width: 50%;
 }
-.btn-width{
+
+@media(max-width: 1100px) {
+    .experience .text {
+        width: 90%;
+    }
+}
+
+.btn-width {
     max-width: 200px;
     background-color: #80DEA9;
 }
-.btn-width:hover{
+
+.btn-width:hover {
     background-color: #fff;
     border: 1px solid #80DEA9;
 }
-.wrap{
+
+.wrap {
     flex-wrap: wrap;
 }
-.collapse .card-flex{
+
+.collapse .card-flex {
     display: flex;
     flex-wrap: wrap;
     border: 0.5px solid #a2a2a2;
@@ -170,7 +222,8 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
     gap: 20px;
     transition-delay: 0ms;
 }
-.collapse{
+
+.collapse {
     overflow: auto;
     scroll-behavior: smooth;
     max-width: 1200px;
@@ -195,15 +248,16 @@ img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
 }
 
 .footer {
-    background-color:rgb(224,234,241);
+    background-color: rgb(224, 234, 241);
 }
+
 footer h4 {
     height: 40px;
 }
 
 /* CONTact as  */
 
- 
+
 .footer .btn {
     padding: 10px 20px;
     border: none;
@@ -213,29 +267,29 @@ footer h4 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
- 
+
 .footer .btn-primary {
-    background-color:  #80DEA9;
+    background-color: #80DEA9;
     color: black;
-    border: 1px solid  #80DEA9;
+    border: 1px solid #80DEA9;
 }
- 
+
 .footer .btn:hover {
-    background-color:  white;
+    background-color: white;
 }
- 
+
 #service {
     display: flex;
     justify-content: space-between;
     margin: 40px auto;
 }
- 
- 
+
+
 .h-primary {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     color: #333;
 }
- 
+
 .contact-card {
     background-color: #fff;
     padding: 20px;
@@ -244,33 +298,43 @@ footer h4 {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 20px;
+    width: 30%;
 }
- 
+
 .contact-card img {
     max-width: 80px;
 }
- 
+
 .contact-card h2 {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 24px;
     margin-top: 10px;
 }
- 
+
 .card-text {
     font-size: 16px;
     margin: 15px 0;
     color: #555;
 }
- 
+
 .phone-number {
     font-size: 18px;
     color: #333;
     margin-top: 5px;
 }
- 
+
 .contact-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
 }
 
+@media(max-width: 1000px) {
+    .contact-cards {
+        flex-direction: column;
+    }
 
+    .contact-card {
+        width: unset;
+    }
+}
