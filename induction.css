@@ -205,7 +205,7 @@ p {
 }
 
 .schedule h3 {
-    letter-spacing: 2px;
+    letter-spacing: 2%;
     font-size: 2vw;
 }
 
@@ -257,13 +257,17 @@ p {
     max-width: 1200px;
 }
 
-.photo img {
-    margin: 50%;
+.photo {
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 2%;
+
 }
 
 .gallery .text {
     color: #730F15;
-    font-size: 2vw;
+    font-size: 1.6vw;
     max-width: 800px;
 }
 

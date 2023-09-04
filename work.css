@@ -227,6 +227,7 @@ i {
     overflow: auto;
     scroll-behavior: smooth;
     max-width: 1200px;
+    display: none;
 }
 
 
